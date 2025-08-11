@@ -6,7 +6,7 @@
   <title>Umrah Mandiri ADEM (UMA)</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
       background-color: #f0f4f8;
       color: #333;
       margin: 0;
@@ -14,11 +14,14 @@
       text-align: center;
     }
 
-    /* Navigasi */
+    /* Navigasi di atas */
     nav {
-      background-color: #87CEEB; /* selaras dengan header */
+      background-color: #87CEEB;
       padding: 10px;
       border-bottom: 2px solid #6cb6d9;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
     nav a {
       color: white;
@@ -26,33 +29,46 @@
       padding: 10px 20px;
       display: inline-block;
       font-weight: bold;
+      transition: background 0.2s ease-in-out;
     }
     nav a:hover {
-      background: #6cb6d9;
+      background-color: #6cb6d9;
       border-radius: 5px;
     }
 
-    .logo {
-      max-width: 180px;
-      display: block;
-      margin: 0 auto 1rem;
-    }
-    .header {
+    /* Header */
+    header {
       background-color: #87CEEB;
       color: white;
       padding: 40px 20px;
     }
-    .header h1 {
+    header img {
+      max-width: 250px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+    header h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 2.2em;
     }
-    .header p {
+    header p {
       margin-top: 10px;
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
-    .container {
-      padding: 30px 20px;
+
+    /* Konten */
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
     }
+    section h2 {
+      color: #004080;
+    }
+
+    /* Tombol Link */
     .link-button {
       display: block;
       background-color: white;
@@ -71,37 +87,53 @@
       background-color: #e0f2f1;
       border-color: #4CAF50;
     }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #888;
-    }
+
+    /* QR Code */
     .qr {
       margin-top: 30px;
+      text-align: center;
     }
     .qr img {
       max-width: 200px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #87CEEB;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigasi -->
+  <!-- Navigasi di Paling Atas -->
   <nav>
+    <a href="#paket">Paket</a>
+    <a href="#jadwal">Jadwal</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#kontak">Kontak</a>
     <a href="https://umrahmandiriadem.biz.id">Beranda</a>
     <a href="https://umrahmandiriadem.biz.id/UMA">Visa & Siskopatuh</a>
     <a href="https://umrahmandiriadem.biz.id/akademi-taruni-quran">Hotel/Apartemen</a>
     <a href="https://umrahmandiriadem.biz.id/galeri">Galeri Kurma</a>
   </nav>
 
-  <div class="header">
-    <img src="latar belakang UMA.jpg" alt="Logo latar belakang UMA" class="logo"/>
+  <!-- Header -->
+  <header>
+    <img src="latar belakang UMA.jpg" alt="Logo latar belakang UMA" class="logo"/>   
+    <h1>Selamat Datang di</h1>
     <h1>Komunitas Umrah Mandiri ADEM</h1>
     <h1>(KURMA)</h1>
-    <p>Aman, Damai, Efisien, Mudah</p>
-  </div>
+    <h3>Semoga Umrahmu menjadi Aman, Damai, Efisien, dan Mabrur</h3>
+  </header>
 
-  <div class="container">
+  <!-- Konten -->
+  <section>
     <a class="link-button" href="https://t.me/+c54tUmlPaSM3MDRl" target="_blank">Pendahuluan</a>
     <a class="link-button" href="#">Pola Umrah Mandiri ADEM</a>
     <a class="link-button" href="https://umrahmandiriadem.biz.id/UMA/" target="_blank">Visa Umrah dan Siskopatuh</a>
@@ -111,15 +143,16 @@
     <a class="link-button" href="#">Checklist Perlengkapan Umroh</a>
     <a class="link-button" href="https://umrahmandiriadem.biz.id/galeri/" target="_blank">Galeri KURMA</a>
     <a class="link-button" href="">☕ Dukung Karya Saya (QRIS / Donasi)</a>
+    
     <div class="qr">
       <img src="qr_telegram_anak_islam_ceria.png" alt="QR Telegram">
     </div>
-  </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Rian Siharga | Anak Islam Ceria
+    &copy; 2025 UMA - Umroh Mandiri Adem | Rian Siharga
   </footer>
 
 </body>
-
 </html>
